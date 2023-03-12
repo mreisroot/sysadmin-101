@@ -1,16 +1,8 @@
 #!/bin/sh
 
-# Install BSD vi (open source distribution of the original vi editor), lynx browser and bash documentation
-apt update
-apt purge -y vim* vim-tiny
-apt install -y nvi lynx bash-doc
-
-# Remove unnecessary packages
-apt autoremove -y
-
-# Copy .bashrc to user directory
-cp /vagrant/.bashrc /home/vagrant/.bashrc
-chown vagrant:vagrant /home/vagrant/.bashrc
+# Install screen, git and lynx browser 
+pkg update
+pkg install -y screen git lynx 
 
 # Get configuration files and scripts for lynx
 su - vagrant <<- EOF
