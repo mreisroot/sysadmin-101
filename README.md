@@ -34,8 +34,9 @@ PS: All the commands have to be executed on the directory where the [Vagrantfile
 
 ## Tools to learn
 
-* bash
-* sh
+* bash (default shell on linux)
+* tcsh (default shell on freebsd)
+* sh (posix shell; compatible on all unix systems)
 * vi
 * GNU screen
 * lynx 
@@ -57,6 +58,7 @@ Of course, if you really want to install a graphical interface on the virtual ma
 * `man intro`: Introduction to UNIX/Linux commands;
 * `info bash`: Bash info page, with examples, divided by topic;
 * `man bash`: Bash man page, for an in-depth understanding and a reference resource;
+* `man tcsh`: Tcsh man page;
 * `man vi`: Vi man page;
 * `info screen`: Screen info page, with examples, divided by topic;
 * `man screen`: Screen man page, for an in-depth understanding and a reference resource;
