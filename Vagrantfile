@@ -10,7 +10,8 @@ Vagrant.configure("2") do |config|
 
   # Define hostname, OS, networking and disk size
   config.vm.hostname = "freebsd"
-  config.vm.box = "freebsd/FreeBSD-13.1-STABLE"
+  config.vm.box = "freebsd/FreeBSD-13.1-RELEASE"
+  config.vm.box_version = "2022.05.12"
   config.vm.network "private_network", ip: "192.168.56.22"
   config.disksize.size = '25GB'
 
