@@ -6,6 +6,7 @@ pkg install -y screen git lynx
 
 # Link .cshrc to vagrant user directory
 ln -sf /vagrant/.cshrc /home/vagrant/.cshrc
+chown vagrant:vagrant /home/vagrant/.cshrc
 
 # Get configuration files and scripts for lynx
 su - vagrant <<- EOF
