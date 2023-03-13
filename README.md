@@ -8,6 +8,8 @@ The goal of this project is to provide a more "traditional" system administratio
 
 ## How to use this project
 
+[Make sure you have VirtualBox installed](https://www.virtualbox.org/wiki/Downloads)
+
 [Make sure you have Vagrant installed](https://developer.hashicorp.com/vagrant/downloads)
 
 To create/power on on the virtual machine, run:
@@ -34,9 +36,9 @@ PS: All the commands have to be executed on the directory where the [Vagrantfile
 
 ## Tools to learn
 
+* sh (posix shell; compatible on all unix systems)
 * bash (default shell on linux)
 * tcsh (default shell on freebsd)
-* sh (posix shell; compatible on all unix systems)
 * vi
 * GNU screen
 * lynx 
@@ -56,6 +58,7 @@ Of course, if you really want to install a graphical interface on the virtual ma
 ### Some documentation for a starting point
 
 * `man intro`: Introduction to UNIX/Linux commands;
+* `man sh`: man page of Bourne shell, the POSIX shell
 * `info bash`: Bash info page, with examples, divided by topic;
 * `man bash`: Bash man page, for an in-depth understanding and a reference resource;
 * `man tcsh`: Tcsh man page;
@@ -65,4 +68,3 @@ Of course, if you really want to install a graphical interface on the virtual ma
 * `man lynx`: Lynx man page;
 * `man man`: man page of the man command;
 * `info info`: info page of the info command.
-* `man sh`: man page of Bourne shell, the POSIX shell
