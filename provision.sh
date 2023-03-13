@@ -4,13 +4,16 @@
 pkg update
 pkg install -y screen git lynx 
 
+# Link .cshrc to vagrant user directory
+ln -sf /vagrant/.cshrc /home/vagrant/.cshrc
+
 # Get configuration files and scripts for lynx
 su - vagrant <<- EOF
   git clone -b server https://gitlab.com/mreisroot/dotfiles.git
 
   # Run the setup scripts for the lynx configuration
-  for i in lynx scripts; do
+  foreach i (lynx scripts)
     cd /home/vagrant/dotfiles/\$i
     ./setup
-  done
+  end
 EOF
