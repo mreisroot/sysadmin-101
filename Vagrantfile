@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "freebsd"
   config.vm.box = "freebsd/FreeBSD-13.1-STABLE"
   config.vm.network "private_network", ip: "192.168.56.22"
-  config.disksize.size = '20GB'
+  config.disksize.size = '25GB'
 
   # Provision VM
   config.vm.provision "shell", path: "provision.sh"
